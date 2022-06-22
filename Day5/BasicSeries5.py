@@ -31,3 +31,18 @@ for i in range(1,n+1):
     for j in range(i+1):
         sum=sum+j
 print(sum)
+
+#the series is summation of (sum of n numbers) n times
+#the original code is O(n^2) complexity
+#rewritingin O(n) complexity
+
+n=int(input())
+sum=0
+for i in range(1,n+1):
+    sum=sum+(i*(i+1))//2
+print(sum)
+
+#rewriting in O(1) complexity
+n=int(input())
+sum=(n*(n+1)*(n+2))//6
+print(sum)
