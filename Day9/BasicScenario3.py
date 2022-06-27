@@ -57,10 +57,17 @@ Number of monkeys left on the tree: 15
 '''
 
 n=int(input()); k=int(input()); j=int(input())
-m=int(input()); p=int(input())
-
-if(n>0 or k>0 or j>0 or m>=0 or p>=0):
-    if m>k and p>j:
-        for i in range
-else:
+m=int(input()); p=int(input()) 
+#n monkeys, k bananas and j peanuts eatable
+#m total banana, p total peanuts
+if(n<=0 or k<=0 or j<=0 or m<0 or p<0):
     print("INVALID INPUT")
+else:
+    bmonk = m/k
+    pmonk = p/j
+    ate = int(bmonk + pmonk)
+    mremaining = n-ate
+    if mremaining<0:
+        print("Number of monkeys left on the tree:",0)
+    else:
+        print("Number of monkeys left on the tree:",mremaining)
