@@ -1,0 +1,4 @@
+1. What is your input
+2. Check and validate for constraints for input
+3. solution
+4. how to present the solutionx
