@@ -27,7 +27,8 @@ Sample Output 0
 
 5 4 3 2 1
 '''
-
+'''
+#this works also
 ar=[]
 n=int(input())
 ar=[int(x) for x in input().split()]
@@ -38,3 +39,11 @@ for i in range(len(ar)//2):
     ar[h]=tmp
     l+=1; h-=1
 print(*ar)
+'''
+n=int(input())
+l=[int(x) for x in input().split()]
+for i in range(len(l)//2):
+    tmp = l[i]
+    l[i]=l[n-i-1]
+    l[n-i-1]=tmp
+print(*l)
