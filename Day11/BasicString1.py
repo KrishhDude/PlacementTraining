@@ -42,3 +42,10 @@ for i in range(len(ar)):
         exit()
 if flag==0:
     print(-1)
+
+str=input()
+p=input()
+try:
+    print(str.index(p)+1)
+except:
+    print(-1)
