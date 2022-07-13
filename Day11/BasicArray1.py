@@ -40,6 +40,15 @@ for i in range(len(ar)//2):
     l+=1; h-=1
 print(*ar)
 '''
+'''
+n=int(input())
+l=[int(x) for x in input().split()]
+li=0; ri=n-1 #li left index ri-right index
+while(li<ri):
+    l[li], l[ri] = l[ri], l[li]
+    li+=1; ri+=1
+print(" ".join(map(str,l)))
+'''
 n=int(input())
 l=[int(x) for x in input().split()]
 for i in range(len(l)//2):
